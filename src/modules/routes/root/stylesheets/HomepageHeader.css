@@ -1,0 +1,92 @@
+.home-header {
+    display: flex;
+    flex-direction: column;
+
+    padding: 2rem 1rem 0rem 1rem;
+
+    margin-bottom: 2rem;
+}
+
+.home-header .header-eyebrow {
+    font-size: var(--fs-base-plus);
+    color: var(--misc-text-sharper);
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+.home-header .header-main {
+    color: var(--dark-text);
+    font-size: var(--fs-xxxl);
+    font-weight: 300;
+    letter-spacing: -0.03rem;
+    line-height: 1;
+
+    margin: 1rem 0;
+    /*Solves side-bearing issue with Montserrat*/
+    margin-left: -0.08em;
+}
+
+.home-header .header-below {
+    color: var(--dark-subtext);
+    font-weight: 500;
+    font-size: var(--fs-base);
+    letter-spacing: 0.01rem;
+
+    margin-bottom: 0.85rem;
+}
+
+.home-header .header-description {
+    color: var(--misc-text);
+    font-size: var(--fs-sm-plus);
+    letter-spacing: 0.005rem;
+
+    margin-bottom: 2.5rem;
+}
+
+.home-header a {
+    max-width: max-content;
+
+    display: flex;
+    align-items: center;
+
+    color: var(--dark-subtext);
+    font-size: var(--fs-sm);
+    text-decoration: none;
+    line-height: 1.2;
+    letter-spacing: 0.02rem;
+
+    border-bottom: 1px solid var(--dark-subtext);
+
+    margin-bottom: 2rem;
+
+    transition: 0.2s;
+}
+
+.home-header a svg {
+    width: 14px;
+    height: 14px;
+}
+
+.home-header a:hover {
+    color: var(--dark-text);
+    border-bottom: 1px solid transparent;
+}
+
+.home-header .header-divider {
+    border-bottom: 1px solid var(--separator-border);
+    padding-top: 2rem;
+}
+
+@media (min-width: 40rem) {
+    .home-header {
+        padding: 2rem;
+        padding-bottom: 0;
+    }
+}
+
+@media (min-width: 64rem) {
+    .home-header {
+        padding: 2.5rem;
+        padding-bottom: 0;
+    }
+}

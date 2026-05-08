@@ -1,0 +1,47 @@
+.error-cont {
+    padding: 0.5rem;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.error-cont > h1 {
+    font-size: var(--fs-lg);
+    font-weight: 400;
+
+    margin-bottom: 0.5rem;
+}
+
+.error-cont > p {
+    font-size: var(--fs-sm);
+    color: var(--misc-text);
+
+    margin-bottom: 1.5rem;
+}
+
+.error-cont > a {
+    width: max-content;
+
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+
+    font-size: var(--fs-sm);
+    text-decoration: none;
+    color: var(--dark-subtext);
+    line-height: 1.25;
+
+    border-bottom: 1px solid var(--dark-subtext);
+
+    transition: 0.2s;
+}
+
+.error-cont > a > svg {
+    width: 16px;
+    height: 16px;
+}
+
+.error-cont > a:hover {
+    color: var(--dark-text);
+    border-bottom: 1px solid transparent;
+}

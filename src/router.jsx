@@ -4,12 +4,14 @@ import Root from './modules/routes/root/Root';
 
 import ErrorPage from './modules/routes/error/ErrorPage';
 
+import HydrateFallback from './modules/utilities/miscComponents/HydrateFallback';
+
 const router = createBrowserRouter([
     {
         path: '/',
         element: <Root />,
         errorElement: <ErrorPage />,
-        hydrateFallbackElement: <h1>Loading (WIP)</h1>
+        hydrateFallbackElement: <HydrateFallback />
     },
 ]);
 
