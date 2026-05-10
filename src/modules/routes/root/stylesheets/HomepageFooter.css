@@ -13,16 +13,29 @@
 }
 
 .home-footer .footer-right {
-    flex-grow: 1;
+
 
     display: flex;
     justify-content: end;
+
+    position: relative;
+}
+
+.home-footer .footer-right.active::before {
+    content: '';
+    position: absolute;
+    background-color: var(--dark-subtext);
+    width: 100%;
+    height: 1px;
+    bottom: -0.1rem;
+
+    transform: skew(-35deg);
 }
 
 .home-footer .footer-right a {
     height: max-content;
 
-    font-size: var(--fs-sm);
+    font-size: var(--fs-xs-plus);
     text-decoration: none;
     color: var(--dark-subtext);
 
@@ -59,6 +72,10 @@
 @media (min-width: 40rem) {
     .home-footer {
         padding: 2rem;
+    }
+
+    .home-footer .footer-right a {
+        font-size: var(--fs-sm);
     }
 }
 

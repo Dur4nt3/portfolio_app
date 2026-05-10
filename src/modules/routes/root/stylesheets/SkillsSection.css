@@ -12,6 +12,21 @@
     line-height: 1;
 
     margin-bottom: 1.25rem;
+
+    width: max-content;
+
+    position: relative;
+}
+
+.section-heading.active::before {
+    content: '';
+    position: absolute;
+    background-color: var(--dark-text);
+    width: 100%;
+    height: 1.5px;
+    bottom: -0.2rem;
+
+    transform: skew(-35deg);
 }
 
 .skills-section .tab-buttons {

@@ -58,10 +58,10 @@ function ProjectCard({
     );
 }
 
-export default function ProjectSection() {
+export default function ProjectSection({active}) {
     return (
         <section className='projects-section'>
-            <h2 className='section-heading' id='projects'>Projects</h2>
+            <h2 className={active ? 'section-heading active' : 'section-heading'} id='projects'>Projects</h2>
             <div className='projects-grid'>
                 <ProjectCard
                     previewImage={cvPreview}

@@ -2,11 +2,11 @@ import { Mail } from 'lucide-react';
 
 import './stylesheets/HomepageFooter.css';
 
-export default function HomepageFooter() {
+export default function HomepageFooter({active}) {
     return (
         <footer className='home-footer'>
             <div className='footer-left'>Dante</div>
-            <div className='footer-right' id='contact'>
+            <div className={active ? 'footer-right active' : 'footer-right'} id='contact'>
                 <a href='mailto:durantedev@protonmail.com'>
                     <Mail strokeWidth={1.5} />
                     <span>Email</span>

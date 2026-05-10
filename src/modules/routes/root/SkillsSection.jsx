@@ -34,12 +34,12 @@ function SkillTab({ tab }) {
     );
 }
 
-export default function SkillsSection() {
+export default function SkillsSection({active}) {
     const [tab, setTab] = useState('frontend');
 
     return (
         <section className='skills-section'>
-            <h2 className='section-heading' id='skills'>Skills</h2>
+            <h2 className={active ? 'section-heading active' : 'section-heading'} id='skills'>Skills</h2>
             <div className='tab-buttons'>
                 <button
                     className={
