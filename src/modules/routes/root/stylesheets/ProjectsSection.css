@@ -21,6 +21,9 @@
 
     border: 1px solid var(--separator-border-soft);
     border-radius: 0.5rem;
+
+    display: flex;
+    flex-direction: column;
 }
 
 .project-card.featured {
@@ -40,6 +43,8 @@
 }
 
 .project-card-body {
+    flex-grow: 1;
+
     display: flex;
     flex-direction: column;
     padding: 1rem;
@@ -51,6 +56,10 @@
     text-transform: uppercase;
     letter-spacing: 0.05rem;
     margin-bottom: 0.5rem;
+}
+
+.project-card .featured-indicator.hide {
+    visibility: hidden;
 }
 
 .project-card .project-title {

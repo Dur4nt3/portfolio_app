@@ -25,7 +25,7 @@ function ProjectCard({
                 style={{ '--preview-image-background': backgroundColor }}
             />
             <div className='project-card-body'>
-                {featured && <p className='featured-indicator'>Featured</p>}
+                <p className={featured ? 'featured-indicator' : 'featured-indicator hide'}>Featured</p>
                 <h3 className='project-title'>{name}</h3>
                 <p className='project-description'>{description}</p>
                 <div className='project-actions'>
