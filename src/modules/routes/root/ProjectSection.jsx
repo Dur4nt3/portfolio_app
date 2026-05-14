@@ -43,6 +43,7 @@ function ProjectCard({
                         target='_blank'
                         rel='noreferrer noopener'
                         className='project-repo'
+                        aria-label={`${name} github repository`}
                     >
                         <svg
                             viewBox='0 0 24 24'
